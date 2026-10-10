@@ -9,74 +9,46 @@
     padding: 40px 40px;
 }
 
-.container {
-    max-width: 800px;
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 12px;
+h1 {
+    color: purple;
 }
 
-
-.accent-paragraph {
-    margin: auto;
-    width: 500px;
-    font-weight: bold;
-    font-family: 'Javanese Text';
-    color: rgba(20, 20, 20, 0.85); /*почему не работает уменьшение яркости*/
-    line-height: 0.4; /* почему не отображается*/
-    font-size: 1.1rem;
-    margin-bottom: 20px;
+h3 {
+    color: pink;
 }
 
 
 p {
     margin: auto;
     width: 500px;
-    color: rgba(40, 40, 40, 0.9);
+    color: deeppink;
     line-height: 2;
     margin-bottom: 30px;
 }
 
-.quote {
-    margin: 40px 40px;
-    padding-left: 30px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    border-left: 4px solid #3b82f6; /* почему не отображается*/
-
-    background-color: #DF0004; /* почему не отображается*/
-    color: #875036; /* почему не отображается*/
-    font-style: italic; /* почему не отображается*/
-}
-.image-wrapper {
-    margin: auto;
-    width: 500px; /* почему не отображается*/
+.image-container {
     position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 24px auto;
     display: inline-block;
-    max-width: 100%;
-    margin: 24px 0;
-    border-radius: 10px;
-    overflow: hidden;
 }
-.styled-image {
-    margin: auto;
-    width: 500px; /* почему не отображается*/
-    display: block;
-    width: 100%;
-    height: auto;
-    filter: brightness(1.12) contrast(90%);
+
+.image-container img {
+        width: 100%;
+        display: block;
+}
+.image-container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(139, 241, 255, 0) 40%, rgba(74, 20, 121, 0.55) 100%);
+        
 }
 
 
-.image-wrapper::after {
-    margin: auto;
-    width: 500px;
-    position: absolute;
-    top: 10;
-    left: 10;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient( to bottom, rgba(139, 241, 255, 0) 40%, rgba(74, 20, 121, 0.55) 100% );
-    /*ничего не отображается((*/
-}
+
+
